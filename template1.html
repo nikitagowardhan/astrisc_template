@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Asterisc Enquiry Details</title>
+  <style type="text/css">
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #f8f9fa;
+      font-size: 14px; /* Changed font size to 14px */
+      font-family: Roboto, Arial, sans-serif; /* Retain the font family */
+    }
+
+    a {
+      color: #1967D2;
+      text-decoration: underline;
+    }
+
+    .container {
+      max-width: 600px;
+      margin: auto;
+      margin-bottom: 10px; /* Adjusted bottom margin */
+    }
+
+    .inner-container {
+      padding: 0 50px;
+    }
+
+    .header, .footer {
+      padding: 20px 0 12px 20px; /* Adjusted padding */
+      text-align: left; /* Align the header text to the left */
+    }
+   
+    .mktoText {
+      color: #3C4043;
+      font-weight: bold;
+      line-height: 150%;
+      margin: 0;
+      padding: 0;
+      text-align: left; /* Align the content text to the left */
+      word-break: break-word;
+    }
+  </style>
+</head>
+<body>
+  <center>
+    <div class="container">
+      <table width="100%" cellspacing="0" cellpadding="0" border="0" style="background-color: #f8f9fa;">
+        <tr>
+          <td valign="top" class="header">
+            <a href="https://asterisc.in/" target="_blank" style="text-decoration: none;">
+              <span style="font-weight: bold; color: blue; font-size: 14px;">Asterisc <span style="color: red;">Computer</span> Institute</span>
+            </a>
+          </td>
+        </tr>
+      </table>
+      <table width="100%" cellspacing="0" cellpadding="0" border="0" style="background-color: #ffffff;">
+        <tr>
+          <td valign="top" class="inner-container" style="font-size: 14px;">
+    <div class="mktoImg" id="fullImg4d58dc6d-ea8a-4cf0-b776-acb989069de8" mktolockimgsize="false"> 
+        <img class="width100" src="https://i.imgur.com/2WawVt1.png" border="0" width="500" style="display: block; width: 500px;" height="375"> 
+    </div>
+    <p class="mktoText" style="font-size: 14px;">Dear <?=rowData[13] ?>,</p><br> 
+    <h4 style="margin-top: 0;">A new enquiry has been received.</h4>
+    <p>Full Name: <?=rowData[1] ?></p>
+    <p>Email: <?=rowData[2] ?></p>
+    <p>Mobile: <a href="https://wa.me/<?=rowData[3] ?>?text=Hello" target="_blank"><?=rowData[3] ?></a></p>
+    <p>Qualification: <?=rowData[4] ?></p>
+    <p>College/Company: <?=rowData[7] ?></p>
+    <p>Year: <?=rowData[5] ?></p>
+    <p>Branch: <?=rowData[6] ?></p>
+    <p>Course: <?=rowData[8] ?></p>
+    <p>Other Requirement Course: <?=rowData[9] ?></p>
+    <p>Source: <?=rowData[10] ?></p>
+    <p>Free Demo Session Update: <?=rowData[11] ?></p>
+    <p>Mode of Training: <?=rowData[12] ?></p>
+</td>
+
+        </tr>
+        <tr>
+          <td valign="top" class="inner-container">
+            <p class="mktoText">Thank you,<br><strong>Asterisc Group</strong></p>
+          </td>
+        </tr>
+      </table>
+    </div> 
+
+    <div class="container">
+      <table width="100%" cellspacing="0" cellpadding="0" border="0" style="background-color: #f8f9fa;">
+        <tr>
+          <td valign="top" class="footer">
+            <div style="padding: 14px 0 10px 20px;"> <!-- Adjusted padding -->
+              <span style="font-weight: bold; color: grey; font-size: 16px;">Asterisc Group</span>
+            </div>
+            <div style="padding: 0 20px 20px;"> <!-- Adjusted padding -->
+              <a href="mailto:Info@asterisc.in" target="_blank"><img src="https://i.imgur.com/7EJDpxj.png" alt="Newsletter" height="48" width="48" constrain="true" imagepreview="false"></a>
+              <a href="https://www.youtube.com/@AsteriscComputerInstitute" target="_blank"><img src="https://i.imgur.com/M0pfwsl.png" alt="YouTube" height="48" width="48" constrain="true" imagepreview="false"></a>
+              <a href="https://twitter.com/asterisci" target="_blank"><img src="https://i.imgur.com/do0IBAm.png" alt="Twitter" height="48" width="48" constrain="true" imagepreview="false"></a>
+              <a href="https://www.facebook.com/asterisc.in/" target="_blank"><img src="https://i.imgur.com/WTed7b1.png" alt="Facebook" height="48" width="48" constrain="true" imagepreview="false"></a>
+              <a href="https://in.pinterest.com/asteriscin/" target="_blank"><img src="https://i.imgur.com/dneOD99.png" alt="Pinterest" height="48" width="48" constrain="true" imagepreview="false"></a>
+            </div>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </center>
+</body>
+</html>
