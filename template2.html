@@ -8,37 +8,51 @@
       padding: 0;
       background-color: #f8f9fa;
       font-size: 14px; /* Changed font size to 14px */
-      font-family: Roboto, Arial, sans-serif; /* Retain the font family */
+      font-family: Arial, sans-serif; /* Changed font family */
     }
 
     a {
       color: #1967D2;
-      text-decoration: underline;
+      text-decoration: none;
     }
 
     .container {
       max-width: 600px;
       margin: auto;
-      margin-bottom: 10px; /* Adjusted bottom margin */
+      margin-bottom: 10px;
     }
 
     .inner-container {
-      padding: 0 50px;
+      text-align: center; /* Center align the content */
     }
 
     .header, .footer {
-      padding: 20px 0 12px 20px; /* Adjusted padding */
-      text-align: left; /* Align the header text to the left */
+      padding: 20px 0 12px 20px;
+      text-align: left;
     }
    
     .mktoText {
       color: #3C4043;
-      font-weight: bold;
-      line-height: 150%;
+      font-weight: normal; /* Changed font weight */
+      line-height: 1.5; /* Changed line height */
       margin: 0;
       padding: 0;
-      text-align: left; /* Align the content text to the left */
+      text-align: left;
       word-break: break-word;
+    }
+    .mktoImg img {
+      max-width: 100%; /* Ensure image doesn't exceed container width */
+      height: auto;
+    }
+    /* Media queries for responsiveness */
+    @media screen and (max-width: 600px) {
+      .container {
+        width: 100%;
+      }
+
+      .inner-container {
+        padding: 0 10px;
+      }
     }
   </style>
 </head>
@@ -46,77 +60,140 @@
   <center>
     <div class="container">
       <table width="100%" cellspacing="0" cellpadding="0" border="0" style="background-color: #f8f9fa;">
-        <tr>
-          <td valign="top" class="header">
-            <a href="https://asterisc.in/" target="_blank" style="text-decoration: none;">
-              <span style="font-weight: bold; color: blue; font-size: 14px;">Asterisc <span style="color: red;">Computer</span> Institute</span>
-            </a>
-          </td>
-        </tr>
+  <tr>
+    <td valign="top" class="header">
+      <a href="https://asterisc.in/" target="_blank" style="text-decoration: none;">
+        <span style="font-weight: bold; color: #808080; font-size: 16px; font-family: Arial, sans-serif;">Asterisc Group</span>
+      </a>
+    </td>
+  </tr>
+</table>
+
       </table>
-      <table width="100%" cellspacing="0" cellpadding="0" border="0" style="background-color: #ffffff;">
-        <tr>
+      <tr>
           <td valign="top" class="inner-container">
-            <div class="mktoImg" id="fullImg4d58dc6d-ea8a-4cf0-b776-acb989069de8" mktolockimgsize="false"> 
-                <img class="width100" src="https://i.imgur.com/2WawVt1.png" border="0" width="500" style="display: block; width: 500px;" height="375"> 
+            <div class="mktoImg">
+              <img src="https://i.imgur.com/2WawVt1.png" border="0" alt="Asterisc Image" width="150">
             </div>
-           <p class="mktoText" style="font-size: 14px;">Dear <?=rowData[1] ?>,</p><br> <!-- Moved "Dear" line inside -->
-           <p style="margin-top: 0; font-size: 14px;">Thank you for your inquiry. Here are the details :</p> <!-- Moved "A new enquiry has been received" line inside -->
-            <p style="font-size: 14px;">Asterisc  Computer Institute is a premier IT education Institute . The institute provides a wide variety of professional career, short term and certification courses, designed by our experts. Our trainers constantly update their technical skills to maintain their expertise.All the courses are taught by certified and experienced faculty. Asterisc computer institute ventured in certification lead IT training ,we have produced highly successful IT professionals working with best IT companies across the globe.Students get placed because of their hardwork and our support and we get business because our students know it better than the most.</p>
-            
           </td>
         </tr>
-
+           
+           <!-- Email Content -->
         <tr>
-          
-        <tr>
-          <td class="mktoText inner-container" id="textContentd907c08d-ab65-4f89-a518-335628ef0d4e" style="color: #3C4043; font-family: Roboto, Arial, sans-serif; font-size: 14px; font-weight: 400; hyphens: none; line-height: 150%; margin: 0; text-align: left; word-break: break-word; padding:13px 50px 13px 50px;">
-          <strong style="font-size: 14px;">If You Want Demo?</strong> To register for our 7-day free demo, please fill out this form:
-         <!-- Add the registration button -->
-          <br><br>
-          <a href="https://docs.google.com/forms/d/1snWjWztvJv-TOksSX4gpbg6YMh2eAMr5PaKyPStMukk/edit" style="display:inline-block; background-color:#4CAF50; border: none; color: white; padding: 10px 20px; text-align: center; text-decoration: none; display: inline-block; font-size: 16px; margin: 4px 2px; cursor: pointer;">Register Now</a>
-        </td>
-        </tr>
-          <td valign="top" class="inner-container">
-       <p class="mktoText" style="font-size: 14px;">Thank you,<br><strong>Asterisc Group</strong></p>
-          </td>
-        </tr>
-      </table>
-    </div> 
-
-    <div class="container">
-      <table width="100%" cellspacing="0" cellpadding="0" border="0" style="background-color: #f8f9fa;">
-        <tr>
-          <td valign="top" class="footer">
-            <div style="padding: 14px 0 10px 20px;"> <!-- Adjusted padding -->
-              <span style="font-weight: bold; color: grey; font-size: 16px;">Asterisc Group</span>
-            </div>
-
-
-            <div style="padding: 16px 0 10px 20px; font-size: 12px;"> <!-- Adjusted padding -->
-    <!-- Contact Us and Phone Number -->
-    <p class="bold-grey" style="font-weight: bold;">Contact Us<br>Phone No: 7744822228</p>
-    <p style="font-weight: bold;">Branch Addresses:</p>
-    <!-- Branch Addresses with Google Maps Links -->
-    <p style="margin: 0;">
-        <a href="https://www.google.com/maps/search/?api=1&query=Bhande Plot, Nandanvan" target="_blank" style="text-decoration: none; color: inherit;">Branch 1: Bhande Plot, Nandanvan</a><br>
-        <a href="https://www.google.com/maps/search/?api=1&query=Tiranga Chowk, Nandanvan" target="_blank" style="text-decoration: none; color: inherit;">Branch 2: Tiranga Chowk, Nandanvan</a><br>
-        <a href="https://www.google.com/maps/search/?api=1&query=Bansi Nagar, Hingna" target="_blank" style="text-decoration: none; color: inherit;">Branch 3: Bansi Nagar, Hingna</a><br>
-        <a href="https://www.google.com/maps/search/?api=1&query=Friends Colony, Katol Road" target="_blank" style="text-decoration: none; color: inherit;">Branch 4: Friends Colony, Katol Road</a>
-    </p>
-</div>
-              <!-- Address Heading -->
+            <td bgcolor="#ffffff" style="padding: 20px;">
               
-            
-            <div style="padding: 0 20px 20px;"> <!-- Adjusted padding -->
-              <a href="mailto:Info@asterisc.in" target="_blank"><img src="https://i.imgur.com/7EJDpxj.png" alt="Newsletter" height="48" width="48" constrain="true" imagepreview="false"></a>
-              <a href="https://www.youtube.com/@AsteriscComputerInstitute" target="_blank"><img src="https://i.imgur.com/M0pfwsl.png" alt="YouTube" height="48" width="48" constrain="true" imagepreview="false"></a>
-              <a href="https://twitter.com/asterisci" target="_blank"><img src="https://i.imgur.com/do0IBAm.png" alt="Twitter" height="48" width="48" constrain="true" imagepreview="false"></a>
-              <a href="https://www.facebook.com/asterisc.in/" target="_blank"><img src="https://i.imgur.com/WTed7b1.png" alt="Facebook" height="48" width="48" constrain="true" imagepreview="false"></a>
-              <a href="https://in.pinterest.com/asteriscin/" target="_blank"><img src="https://i.imgur.com/dneOD99.png" alt="Pinterest" height="48" width="48" constrain="true" imagepreview="false"></a>
-            </div>
-          </td>
+                <p><b>Dear</b> <?=rowData[1] ?>,</p>
+                <p>I hope this email finds you well.</p>
+                <p>Thank you for expressing interest in ASTERISC! 🌟 We have sent you the attachment of the course content PDF you asked for. If it doesn't open, please click the link below.</p>
+                <p>We are excited to embark on this journey with you towards elevating your career to the next level! 🚀</p>
+                <p>Are you ready to dive into a transformative learning experience? We invite you to join our exclusive 7-days free demo class where you can explore and develop your skills further. These demo classes serve as a gateway for you to gain insight into the exceptional training ASTERISC provides.</p>
+                <p>Before you decide, we encourage you to check our students' reviews on Google and watch our YouTube videos. All our reviews are genuine and reflect the satisfaction of our students with our training programs.</p>
+
+                <!-- Training Sessions -->
+                <p><b>What You Can Expect During Our Training Sessions:</p>
+                <ul style="list-style: none; padding-left: 0;">
+                    <li>✅ Industry Experts as Trainers</li>
+                    <li>✅ Premium Quality Content</li>
+                    <li>✅ 100% Practical Learning Experience</li>
+                    <li>✅ Daily Assignments to Reinforce Learning</li>
+                    <li>✅ Project-Based Learning Approach</li>
+                    <li>✅ Real-Time Live Projects for Hands-On Experience</li>
+                    <li>✅ One-to-One Doubt Resolution Sessions</li>
+                    <li>✅ Preparation for Placement Interviews</li>
+                    <li>✅ Internship Opportunities</li>
+                    <li>✅ 100% Job Assistance Guaranteed</li>
+                    <li>✅ Government Authorized & ISO Certified Courses</li>
+                </ul>
+
+                <!-- Demo Session Button -->
+                <!-- Demo Session Text -->
+<p>
+
+  <p>We understand the importance of experiencing our training firsthand. To secure your spot for the free demo session, simply click on the button below:</p>
+
+<div style="text-align: center;">
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSc5yG6GMTaa8Nks355CfHwtC5XH-1H5psUUyW5iuDQwvOxQwQ/viewform" style="display: inline-block; background-color: #007bff; color: #fff; text-decoration: none; padding: 10px 20px; border-radius: 5px;">Register</a>
+</div>
+
+</p>
+
+
+                <!-- Additional Services -->
+                <p>Seats are filling up fast, so don't miss out on this opportunity to kickstart your career journey with ASTERISC!</p>
+
+                <p>In addition to our training programs, we also offer a range of other services, including internships (Hybrid Mode), college projects (Mini/Mega), website development, software development, and digital marketing.
+</p>
+                
+
+                <!-- Contact Information -->
+                <p>For any queries or further assistance, feel free to reach out to us via call or WhatsApp at 7744822228 / 7743822228. You can also visit our branches located: <a href="https://asterisc.in/locations/">Branch Locations</a>.</p>
+
+                <!-- Inquiry Form -->
+                <p>Ready to take the first step towards a brighter future? Complete our online inquiry form <a href="https://asterisc.in/e/">here</a>.</p>
+
+                <!-- Closing -->
+                <p>We look forward to welcoming you to ASTERISC and guiding you towards success!</p>
+                <p>Warm regards,<br><br>[<?=rowData[1] ?>]<br><br>ASTERISC GROUP</p>
+            </td>
         </tr>
+
+        <div class="container" style="padding: 10px;">
+  <table width="100%" cellspacing="0" cellpadding="0" border="0" style="background-color: #f8f9fa; padding: 0 10px;">
+    <tr>
+      <td valign="top" class="footer" style="padding-left: 10px; padding-right: 10px;">
+        <div style="padding: 15px 10px; text-align: center; background-color: #ebebeb;">
+          <span style="font-weight: bold; color: #333; font-size: 14px;">Contact Us</span><br>
+          <strong style="color: #333; font-size: 12px;">Phone No:</strong> <a href="tel:7744822228" style="text-decoration: none; color: #333; font-size: 12px;">7744822228</a>
+          <strong style="color: #333; margin-left: 10px; font-size: 12px;">Email:</strong> <a href="mailto:Info@asterisc.in" style="text-decoration: none; color: #333; font-size: 12px;">Info@asterisc.in</a>
+        </div>
+      
+        <!-- Container for branches section -->
+        <div style="padding: 15px 10px; background-color: #ebebeb; margin-top: 20px; max-width: 800px; margin: 0 auto;"> <!-- Adjusted padding and margin -->
+          <!-- Branches section -->
+          <div style="display: flex; justify-content: space-between; margin: 0 auto;">
+            <!-- Left column for branches -->
+            <div style="width: 48%; padding-right: 5px;"> <!-- Added padding-right -->
+              <div style="font-size: 10px; margin-bottom: 10px;"> <!-- Reduced font size -->
+                <p><a href="https://www.google.com/maps/search/?api=1&query=Bhande Plot, Nandanvan" style="text-decoration: none; color: #333;" target="_blank">Branch 1: Bhande Plot, Nandanvan</a></p>
+                <p><a href="https://www.google.com/maps/search/?api=1&query=Tiranga Chowk, Nandanvan" style="text-decoration: none; color: #333;" target="_blank">Branch 2: Tiranga Chowk, Nandanvan</a></p>
+              </div>
+            </div>
+
+            <!-- Right column for branches -->
+            <div style="width: 48%; padding-left: 5px;"> <!-- Added padding-left -->
+              <div style="font-size: 10px; margin-bottom: 10px;"> <!-- Reduced font size -->
+                <p><a href="https://www.google.com/maps/search/?api=1&query=Bansi Nagar, Hingna" style="text-decoration: none; color: #333;" target="_blank">Branch 3: Bansi Nagar, Hingna</a></p>
+                <p><a href="https://www.google.com/maps/search/?api=1&query=Friends Colony, Katol Road" style="text-decoration: none; color: #333;" target="_blank">Branch 4: Friends Colony, Katol Road</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- One line gap -->
+        <div style="margin-bottom: 10px;"></div>
+
+        <!-- Social media icons -->
+        <div style="margin-bottom: 10px; text-align: center;">
+          <a href="https://www.youtube.com/@AsteriscComputerInstitute" target="_blank" style="text-decoration: none; margin-right: 5px;"><img src="https://i.imgur.com/M0pfwsl.png" alt="YouTube" height="40" width="40"></a>
+          <a href="https://twitter.com/asterisci" target="_blank" style="text-decoration: none; margin-right: 5px;"><img src="https://i.imgur.com/do0IBAm.png" alt="Twitter" height="40" width="40"></a>
+          <a href="https://www.facebook.com/asterisc.in/" target="_blank" style="text-decoration: none; margin-right: 5px;"><img src="https://i.imgur.com/WTed7b1.png" alt="Facebook" height="40" width="40"></a>
+          <a href="https://in.pinterest.com/asteriscin/" target="_blank" style="text-decoration: none;"><img src="https://i.imgur.com/dneOD99.png" alt="Pinterest" height="40" width="40"></a>
+        </div>
+
+        <!-- One line gap -->
+        <div style="margin-bottom: 10px;"></div>
+
+        <!-- Copyright text -->
+        <div style="padding: 10px; text-align: center;">
+          <p style="font-size: 12px; margin: 0;">© 2024 Group. All rights reserved.</p>
+        </div>
+      </td>
+    </tr>
+  </table>
+</div>
+
+
+       
       </table>
     </div>
   </center>
